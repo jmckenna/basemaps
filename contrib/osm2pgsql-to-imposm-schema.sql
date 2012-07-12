@@ -19,6 +19,9 @@
    
    Notes:   This assumes that you already ran the osm2pgsql tool with the
             '-E 3857' switch
+            
+            Also, you may have to edit osm2pgsql's 'default.style' file 
+            beforehand, to make sure it contains a node,way for 'population'
 
    Execute: psql -U postgres -d osm -f osm2pgsql-to-imposm-schema.sql
    
